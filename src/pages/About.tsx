@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { Quote, MapPin, Heart, Mountain } from "lucide-react";
+import { Quote, MapPin, Heart, Mountain, Linkedin } from "lucide-react";
 
 const About = () => {
   return (
@@ -9,11 +9,11 @@ const About = () => {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="relative pt-32 pb-20 lg:pt-40 lg:pb-32 overflow-hidden">
+      <section className="relative pt-24 pb-12 lg:pt-32 lg:pb-20 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-accent/5" />
         
         <div className="container mx-auto px-4 lg:px-8 relative">
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
             {/* Image Column */}
             <motion.div
               initial={{ opacity: 0, x: -50 }}
@@ -23,7 +23,7 @@ const About = () => {
             >
               <div className="relative">
                 {/* Main Image Container */}
-                <div className="relative aspect-[4/5] rounded-2xl overflow-hidden shadow-dramatic">
+                <div className="relative aspect-[3/4] rounded-2xl overflow-hidden shadow-dramatic max-w-sm mx-auto lg:max-w-none">
                   <div className="absolute inset-0 bg-gradient-to-t from-primary/40 via-transparent to-transparent z-10" />
                   <img
                     src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=750&fit=crop&crop=face"
@@ -71,9 +71,20 @@ const About = () => {
                 Founder & CEO, Fáilte Media
               </p>
               
-              <div className="flex items-center gap-2 text-muted-foreground mb-8">
-                <MapPin className="w-4 h-4" />
-                <span className="font-body text-sm">Dublin, Ireland</span>
+              <div className="flex items-center gap-4 mb-6">
+                <div className="flex items-center gap-2 text-muted-foreground">
+                  <MapPin className="w-4 h-4" />
+                  <span className="font-body text-sm">Dublin, Ireland</span>
+                </div>
+                <a
+                  href="https://linkedin.com/in/patrickcunningham"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 text-accent hover:text-accent/80 transition-colors"
+                >
+                  <Linkedin className="w-5 h-5" />
+                  <span className="font-body text-sm font-medium">LinkedIn</span>
+                </a>
               </div>
               
               <div className="space-y-6 font-body text-lg text-muted-foreground leading-relaxed">
@@ -90,7 +101,7 @@ const About = () => {
       </section>
 
       {/* Story Section */}
-      <section className="py-20 lg:py-32 bg-card">
+      <section className="py-12 lg:py-20 bg-card">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="max-w-4xl mx-auto">
             <motion.div
@@ -167,7 +178,7 @@ const About = () => {
       </section>
 
       {/* Values Section */}
-      <section className="py-20 lg:py-32">
+      <section className="py-12 lg:py-20">
         <div className="container mx-auto px-4 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -218,7 +229,7 @@ const About = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 lg:py-32 bg-gradient-hero">
+      <section className="py-12 lg:py-20 bg-gradient-hero">
         <div className="container mx-auto px-4 lg:px-8 text-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
