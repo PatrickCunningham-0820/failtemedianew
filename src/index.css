@@ -6,62 +6,65 @@
 
 @layer base {
   :root {
-    /* Irish-inspired palette */
-    --background: 45 30% 97%;
-    --foreground: 150 25% 12%;
+    /* Irish-inspired palette - Brighter & More Vibrant */
+    --background: 48 45% 98%;
+    --foreground: 145 30% 10%;
 
-    --card: 45 25% 95%;
-    --card-foreground: 150 25% 12%;
+    --card: 48 40% 96%;
+    --card-foreground: 145 30% 10%;
 
-    --popover: 45 30% 97%;
-    --popover-foreground: 150 25% 12%;
+    --popover: 48 45% 98%;
+    --popover-foreground: 145 30% 10%;
 
-    /* Emerald green - primary */
-    --primary: 152 45% 25%;
-    --primary-foreground: 45 30% 97%;
+    /* Vibrant Irish Green - primary */
+    --primary: 145 65% 32%;
+    --primary-foreground: 48 45% 98%;
 
     /* Warm cream - secondary */
-    --secondary: 40 35% 90%;
-    --secondary-foreground: 150 25% 12%;
+    --secondary: 42 50% 92%;
+    --secondary-foreground: 145 30% 10%;
 
-    /* Muted sage */
-    --muted: 150 15% 88%;
-    --muted-foreground: 150 15% 40%;
+    /* Soft sage muted */
+    --muted: 145 20% 90%;
+    --muted-foreground: 145 20% 38%;
 
-    /* Atlantic blue accent */
-    --accent: 200 55% 35%;
-    --accent-foreground: 45 30% 97%;
+    /* Irish Orange accent (flag-inspired) */
+    --accent: 28 90% 52%;
+    --accent-foreground: 48 45% 98%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 150 15% 82%;
-    --input: 150 15% 82%;
-    --ring: 152 45% 25%;
+    --border: 145 18% 84%;
+    --input: 145 18% 84%;
+    --ring: 145 65% 32%;
 
     --radius: 0.5rem;
 
-    /* Custom tokens */
-    --emerald: 152 45% 25%;
-    --emerald-light: 152 35% 35%;
-    --emerald-dark: 152 50% 15%;
-    --atlantic: 200 55% 35%;
-    --atlantic-light: 200 45% 50%;
-    --gold: 38 70% 50%;
-    --gold-light: 40 65% 65%;
-    --cream: 45 30% 97%;
-    --cream-dark: 40 25% 92%;
-    --stone: 30 15% 30%;
+    /* Custom tokens - Brighter Irish colors */
+    --emerald: 145 65% 32%;
+    --emerald-light: 145 55% 45%;
+    --emerald-dark: 145 70% 22%;
+    --atlantic: 195 70% 42%;
+    --atlantic-light: 195 60% 55%;
+    --gold: 42 95% 50%;
+    --gold-light: 45 90% 62%;
+    --orange: 28 90% 52%;
+    --orange-light: 30 85% 62%;
+    --cream: 48 45% 98%;
+    --cream-dark: 45 35% 93%;
+    --stone: 30 20% 25%;
 
-    /* Gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(152 45% 25%) 0%, hsl(200 55% 35%) 100%);
-    --gradient-gold: linear-gradient(135deg, hsl(38 70% 50%) 0%, hsl(40 65% 65%) 100%);
-    --gradient-overlay: linear-gradient(180deg, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.1) 50%, rgba(0,0,0,0.6) 100%);
+    /* Gradients - More vibrant */
+    --gradient-hero: linear-gradient(135deg, hsl(145 65% 32%) 0%, hsl(145 55% 45%) 50%, hsl(195 70% 42%) 100%);
+    --gradient-gold: linear-gradient(135deg, hsl(42 95% 50%) 0%, hsl(28 90% 52%) 100%);
+    --gradient-irish: linear-gradient(135deg, hsl(145 65% 32%) 0%, hsl(42 95% 50%) 50%, hsl(28 90% 52%) 100%);
+    --gradient-overlay: linear-gradient(180deg, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0.05) 50%, rgba(0,0,0,0.5) 100%);
 
-    /* Shadows */
-    --shadow-soft: 0 4px 20px -4px hsl(150 25% 12% / 0.1);
-    --shadow-elevated: 0 12px 40px -8px hsl(150 25% 12% / 0.15);
-    --shadow-dramatic: 0 25px 60px -15px hsl(150 25% 12% / 0.25);
+    /* Shadows - Warmer tones */
+    --shadow-soft: 0 4px 20px -4px hsl(145 30% 10% / 0.08);
+    --shadow-elevated: 0 12px 40px -8px hsl(145 30% 10% / 0.12);
+    --shadow-dramatic: 0 25px 60px -15px hsl(145 30% 10% / 0.2);
 
     /* Typography */
     --font-display: 'Playfair Display', serif;
@@ -78,33 +81,33 @@
   }
 
   .dark {
-    --background: 150 25% 8%;
-    --foreground: 45 30% 95%;
+    --background: 145 25% 7%;
+    --foreground: 48 45% 95%;
 
-    --card: 150 20% 12%;
-    --card-foreground: 45 30% 95%;
+    --card: 145 22% 11%;
+    --card-foreground: 48 45% 95%;
 
-    --popover: 150 25% 8%;
-    --popover-foreground: 45 30% 95%;
+    --popover: 145 25% 7%;
+    --popover-foreground: 48 45% 95%;
 
-    --primary: 152 40% 45%;
-    --primary-foreground: 150 25% 8%;
+    --primary: 145 55% 48%;
+    --primary-foreground: 145 25% 7%;
 
-    --secondary: 150 15% 18%;
-    --secondary-foreground: 45 30% 95%;
+    --secondary: 145 18% 16%;
+    --secondary-foreground: 48 45% 95%;
 
-    --muted: 150 15% 20%;
-    --muted-foreground: 150 10% 60%;
+    --muted: 145 15% 18%;
+    --muted-foreground: 145 12% 58%;
 
-    --accent: 200 50% 50%;
-    --accent-foreground: 150 25% 8%;
+    --accent: 28 85% 55%;
+    --accent-foreground: 145 25% 7%;
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 65% 35%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 150 15% 20%;
-    --input: 150 15% 20%;
-    --ring: 152 40% 45%;
+    --border: 145 15% 18%;
+    --input: 145 15% 18%;
+    --ring: 145 55% 48%;
   }
 }
 
@@ -155,6 +158,17 @@
 
   .bg-gradient-gold {
     background: var(--gradient-gold);
+  }
+
+  .bg-gradient-irish {
+    background: var(--gradient-irish);
+  }
+
+  .text-gradient-irish {
+    background: var(--gradient-irish);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
   }
 
   .bg-gradient-overlay {
